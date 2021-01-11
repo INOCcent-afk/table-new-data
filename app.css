@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background: #f1f1f1;
+}
+
+.wrap {
+  padding: 20px 10px;
+  font-family: sans-serif;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.wrap-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.wrap-title h1 {
+  font-size: 23px;
+  color: #23282d;
+}
+.wrap-title a {
+  padding: 10px 15px;
+  border: 1px solid #0071a1;
+  color: #0071a1;
+  font-size: 14px;
+  border-radius: 2px;
+  text-decoration: none;
+  background: #f3f5f6;
+  cursor: pointer;
+}
+.subsubsub {
+  display: flex;
+  gap: 10px;
+}
+.subsubsub li {
+  list-style: none;
+}
+.subsubsub li a {
+  text-decoration: none;
+  color: #0071a1;
+  font-size: 16px;
+}
+.subsubsub li a span {
+  color: #555d66;
+  font-weight: 400;
+}
+.all::after {
+  content: " |";
+}
+.all a {
+  font-weight: 600;
+  color: #000 !important;
+}
+.administrator::after {
+  content: " |";
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.wp-list-table {
+  width: 100%;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.wp-list-table-title,
+.wp-list-table-footer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  height: 46px;
+  align-items: center;
+}
+.wp-list-table-title a img,
+.wp-list-table-footer a img {
+  width: 8px;
+  transform: rotate(180deg);
+  visibility: hidden;
+}
+
+.wp-list-table-title a,
+.wp-list-table-footer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  width: 80%;
+  height: 100%;
+  color: #0071a1;
+  height: 46px;
+  font-size: 14px;
+}
+.wp-list-table-title a:hover img,
+.wp-list-table-footer a:hover img {
+  visibility: visible;
+}
+.wp-list-table-title {
+  border-bottom: 1px solid #ccd0d4;
+}
+.wp-list-table-footer {
+  border-top: 1px solid #ccd0d4;
+}
+
+.the-list {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#user {
+  display: flex;
+  padding: 10px;
+  position: relative;
+  gap: 20px;
+  background: #f9f9f9;
+  max-height: 75px;
+  overflow: hidden;
+}
+#user:hover .user-info-links {
+  visibility: visible;
+}
+.user-arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  cursor: pointer;
+}
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.user-info-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.user-info-wrapper a {
+  font-size: 13px;
+  color: #0071a1;
+  text-decoration: none;
+  font-weight: 600;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.user-info-links {
+  visibility: hidden;
+  display: flex;
+  gap: 40px;
+}
+.delete {
+  color: #a00 !important;
+}
+.user-info-links a {
+  font-weight: 400;
+}
+.user-info-avatar {
+  width: 35px;
+  height: 35px;
+}
+.hidden-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.hidden-user-info div {
+  display: flex;
+  gap: 50px;
+  padding: 5px;
+}
+.hidden-user-info div span {
+  color: #555d66;
+  font-size: 13px;
+}
+.hidden-user-info div a {
+  color: #0071a1;
+  word-wrap: break-word;
+  font-size: 13px;
+  text-decoration: none;
+}
+.hidden-user-info div p {
+  color: #555d66;
+  font-size: 13px;
+}
+.email a {
+  word-break: break-all;
+}
+.showUserInfo {
+  max-height: 300px !important;
+}
+.tablenav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tablenav-container span {
+  font-size: 13px;
+  color: #444;
+}
+.tablenav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bulkactions select,
+.changerole select {
+  font-size: 14px;
+  min-height: 35px;
+  color: #555d66;
+  cursor: pointer;
+  outline: #0071a1;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  outline: 1px solid #555d66;
+}
+.bulkactions,
+.changerole {
+  display: flex;
+  gap: 15px;
+}
+
+.bulkactions input[type="submit"],
+.changerole input[type="submit"] {
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #0071a1;
+  border: 1px solid #0071a1;
+  background: #f3f5f6;
+  outline: #0071a1;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.bulkactions select:hover,
+.changerole select:hover {
+  color: #0071a1;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.search-box input {
+  height: 40px;
+}
+.search-box input[type="submit"] {
+  width: 108px;
+  border-radius: 5px;
+  padding: 0 14px;
+  border: 1px solid #0071a1;
+  color: #0071a1;
+  cursor: pointer;
+}
+.desktopTableNav,
+.desktopSearchBox,
+.wp-list-table-desktop,
+.desktop-user-info {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .wrap-title a {
+    padding: 4px 8px;
+  }
+  .search-box,
+  .user-arrow,
+  .hidden-user-info {
+    display: none;
+  }
+  .desktopTableNav,
+  .desktopSearchBox {
+    display: flex;
+  }
+  .subsubsub-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .subsubsub {
+    align-self: flex-end;
+  }
+  .subsubsub li a {
+    font-size: 13px;
+  }
+  .desktopSearchBox {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .search-box input {
+    height: 30px;
+  }
+  form {
+    gap: 10px;
+  }
+  .bulkactions input[type="submit"],
+  .changerole input[type="submit"] {
+    font-size: 13px;
+    min-height: 30px;
+  }
+  .wp-list-table-title a,
+  .wp-list-table-footer a {
+    /* width: unset; */
+    width: 50%;
+  }
+  .wp-list-table-title {
+    justify-content: space-between;
+  }
+  .user-info-wrapper {
+    width: 45%;
+  }
+  .wp-list-table-desktop {
+    display: grid;
+    grid-template-columns: 35% 35% 20% 10%;
+    justify-content: space-between;
+    width: 100%;
+    align-content: flex-end;
+  }
+  .user-info-links {
+    gap: 15px;
+  }
+  .user-info {
+    gap: 15px;
+  }
+  .wp-list-table-title,
+  .wp-list-table-footer {
+    height: 35px;
+  }
+
+  .user-info-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .desktop-user-info {
+    display: grid;
+    grid-template-columns: 35% 35% 20% 10%;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .desktop-user-info a,
+  .desktop-user-info span {
+    font-size: 13px;
+    padding: 0 5px 0 2%;
+    text-decoration: none;
+    color: #555d66;
+  }
+  .desktop-user-info a {
+    color: #0071a1;
+    word-break: break-all;
+  }
+}
+
+@media (min-width: 1000px) {
+  .user-info-wrapper {
+    width: 46%;
+  }
+  .wp-list-table-title a,
+  .wp-list-table-footer a {
+    width: 49%;
+  }
+}
